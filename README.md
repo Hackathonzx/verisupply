@@ -48,7 +48,7 @@ Compile the Contracts:
 Run Tests:
 - npx hardhat test
 
-**Contract Deployment**
+# Contract Deployment
 
 Deploy Contracts:
 
@@ -111,7 +111,7 @@ await productTracking.grantTransporterRole(transporter.address);
 
 await productTracking.grantRetailerRole(retailer.address);
 
-**Testing**
+# Testing
 
 The project includes comprehensive test cases covering all major functionalities:
 
