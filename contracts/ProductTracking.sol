@@ -13,7 +13,7 @@ contract ProductTracking is SupplyChainAccessControl {
         int temperature;
         int latitude;
         int longitude;
-        uint lastUpdateTime;  // Changed from timestamp to lastUpdateTime for clarity
+        uint lastUpdateTime;
         bytes32 qrHash;
     }
 
@@ -37,9 +37,7 @@ contract ProductTracking is SupplyChainAccessControl {
     event ProductAlert(uint productId, string alertMessage);
     event AlertReset(uint productId);
 
-    constructor() SupplyChainAccessControl() {
-        // Initialize with the same admin as parent contract
-    }
+    constructor() SupplyChainAccessControl() {}
 
     modifier onlyAuthorized() {
         require(isAuthorized(msg.sender), "Not authorized to update status.");
