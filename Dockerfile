@@ -27,7 +27,7 @@ WORKDIR /usr/src/verisupply
 
 COPY . .
 
-RUN dx build --features web --platform web --release
+RUN dx build --features fullstack --platform fullstack --release
 
 # RUN cargo build --release
 # RUN cargo install --path .
@@ -35,9 +35,10 @@ RUN dx build --features web --platform web --release
 # RUN cargo install --path . --features web --target wasm32-unknown-unknown
 # RUN cargo install --path . --features web --target wasm32-unknown-unknown --release
 
-CMD ["/usr/src/cochrane/target/release/backend"]
-
 EXPOSE 8080
+
+CMD ["/usr/src/verisupply/target/release/verisupply"]
+
 
 
 
