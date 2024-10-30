@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure-kv&=h0y#g@dn6wxdt9g&jpm(2m=d0!b+vc(^s!9l#-pm-qoysa
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+
+    'verisupply.onrender.com'
+]
 
 
 # Application definition
