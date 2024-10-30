@@ -1,0 +1,68 @@
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --card-background: #f9f9f9;
+}
+
+[data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --card-background: #1e1e1e;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--card-background);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(--card-background);
+}
+
+nav button {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.role-section {
+    display: none;
+}
+
+.role-section.active {
+    display: block;
+}
+
+.card {
+    background-color: var(--card-background);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--card-background);
+}
